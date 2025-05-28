@@ -1,6 +1,6 @@
 # Linux Experience
 
-### [Navigation Basics]()
+### [Navigation Basics](https://github.com/khrykinnv/Linux/blob/main/Navigation%20Basics)
 
 ### [Editing Files]()
 
