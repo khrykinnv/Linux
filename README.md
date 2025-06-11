@@ -4,9 +4,9 @@
 
 ### [Редактирование файлов](https://github.com/khrykinnv/Linux/blob/main/Editing%20Files.md)
 
-### [Linux Shell Basics]()
+### [Основы оболочки Linux](Основы оболочки Linux.md)
+
+### 
 
 
 
-
-  
