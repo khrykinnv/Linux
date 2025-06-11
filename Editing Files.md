@@ -17,19 +17,68 @@ Vi/vimС другой стороны, он более продвинут и пр
 https://www.scaler.com/topics/how-to-edit-a-file-in-linux/
 
 ## Vim: 
-![Image_vim](https://github.com/khrykinnv/Linux/blob/main/images/vim.png)
+![Image_vim](images/vim.png)
 
 
 
 ### VimTutor
-https://manpages.ubuntu.com/manpages/bionic/ru/man1/vimtutor.1.html
+https://i-notes.org/vimtutor-uchebnik-vim-versiya-1-7/
+
+https://rigovanov.ru/vim/
 
 i - режим вставки текста
 
 Esc - режим ввода команд 
 
-:q
+/ - поиск
+
+:q! - выход без сохранения (:wq - сохранить и выйти)
 
 
+## Nano
+### Подсветка синтаксиса
+На удаленных серверах для правки конфигов можно использовать nano – быстрый, понятный, простой текстовый редактор, с подсведкой синтаксиса. Согласитесь, это очень удобно :-)
+
+1. Найдем, где в нашей системе находятся примеры файлов .nanorc. На Ubuntu они обычно в каталоге /usr/share/nano/. Скопируем к себе в каталог, файл конфигурации:
+
+``$ cp /etc/nanorc ~/.nanorc ``
+
+
+
+2. Добавим строчки в файл ~/.nanorc (на Ubuntu примеры конфигурации идут в поставке) для подсветки необходимых нам файлов, если они отсутствуют в стандартном файле конфигурации:
+
+#### TeX
+include "/usr/share/nano/patch.nanorc"
+#### POV-Ray
+include "/usr/share/nano/pov.nanorc"
+#### Perl
+include "/usr/share/nano/perl.nanorc"
+#### Nanorc files
+include "/usr/share/nano/nanorc.nanorc"
+#### Python
+include "/usr/share/nano/python.nanorc"
+#### C/C++
+include "/usr/share/nano/c.nanorc"
+#### Groff
+include "/usr/share/nano/groff.nanorc"
+#### Assembler
+include "/usr/share/nano/asm.nanorc"
+#### Ruby
+include "/usr/share/nano/ruby.nanorc"
+#### Manpages
+include "/usr/share/nano/man.nanorc"
+#### HTML
+include "/usr/share/nano/html.nanorc"
+#### Bourne shell scripts
+include "/usr/share/nano/sh.nanorc"
+#### Sun Java
+include "/usr/share/nano/java.nanorc"
+
+### Как отобразить нумерацию строк в nano при открытии файла
+``sudo nano /etc/nanorc``
+
+``linenumbers yes``
+
+https://mascloud.ru/kratkaya-shpargalka-po-sochetaniyam-klavish-nano/
 
 
