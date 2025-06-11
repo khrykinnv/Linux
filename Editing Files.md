@@ -25,7 +25,9 @@ https://www.scaler.com/topics/how-to-edit-a-file-in-linux/
 https://manpages.ubuntu.com/manpages/bionic/ru/man1/vimtutor.1.html
 
 i - режим вставки текста
+
 Esc - режим ввода команд 
+
 :q
 
 
